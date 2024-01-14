@@ -1,0 +1,111 @@
+:root {
+    --fg-color: #a1634b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins",'sans-serif;';
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 14%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+header .logo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav a {
+  color: var(--fg-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background: url(images/bg-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.mask {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: calc(100vh * 0.14);
+  background: linear-gradient(90deg, rgba(161, 99, 75, 0.6),transparent);
+}
+
+.compo {
+  color: white;
+  width: 70%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: calc(100% * 0.2);
+  left: calc(100% * 0.019);
+}
+
+.compo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  margin-bottom: 25px;
+}
+
+.compo p {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 25px;
+  color: whitesmoke;
+}
+
+.compo button {
+  width: 25%;
+  border: none;
+  padding: 15px;
+  background-color: var(--fg-color);
+  border-radius: 10px;
+  font: inherit;
+  color: white;
+}
+
+.discover {
+  
+}
