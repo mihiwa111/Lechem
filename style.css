@@ -13,7 +13,8 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "poppins",'sans-serif;';
+  font-family: "poppins",'sans-serif';
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -21,7 +22,7 @@ header {
   width: 100%;
   height: 14%;
   margin: 0;
-  padding: 0;
+  padding: 0 2% 0 0;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,7 @@ header {
 }
 
 header .logo {
+  width: fit-content;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -41,10 +43,7 @@ nav a {
 nav ul {
   list-style: none;
   display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
+  gap: 20px;
 }
 
 a {
@@ -57,55 +56,109 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   margin: 0;
   padding: 0;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mask {
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   position: absolute;
-  top: calc(100vh * 0.14);
+  left: 0;
   background: linear-gradient(90deg, rgba(161, 99, 75, 0.6),transparent);
 }
 
 .compo {
   color: white;
-  width: 70%;
-  position: absolute;
-  z-index: 1;
+  width: 95%;
+  position: relative;
+  z-index: 2;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-  top: calc(100% * 0.2);
-  left: calc(100% * 0.019);
+  align-items: start;
 }
 
 .compo h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 6rem;
-  margin-bottom: 25px;
+  font-size: 5em;
+  margin-bottom: 3%;
 }
 
 .compo p {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: normal;
-  margin-bottom: 25px;
+  margin-bottom: 3%;
+  width: 40%;
   color: whitesmoke;
 }
 
 .compo button {
-  width: 25%;
+  width: 12%;
+  min-width: 90px;
   border: none;
-  padding: 15px;
+  padding: 10px;
   background-color: var(--fg-color);
   border-radius: 10px;
-  font: inherit;
+  font-size: 1em;
+  font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
 .discover {
-  
+  width: 100%;
+  height: 300px;
+  font-size: 1.8em;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #a1634b;
+}
+
+.link a {
+  color: white;
+  background-color: #a1634b;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.link {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest {
+  background-color: gray;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#last-article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.latest .art {
+  width: 85%;
+  height: 20%;
+  border-radius: 10px;
+  background-color: red;
 }
