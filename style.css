@@ -122,6 +122,17 @@ a {
   color: #a1634b;
 }
 
+.latest .title {
+  font-size: 1.8em;
+  color: #a1634b;
+}
+
+.title div {
+  background-color: #a1634b;
+  color: white;
+  display: inline-block;
+}
+
 .link a {
   color: white;
   background-color: #a1634b;
@@ -138,7 +149,7 @@ a {
 }
 
 .latest {
-  background-color: gray;
+  background-color: whitesmoke;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -156,9 +167,57 @@ a {
   height: 100%;
 }
 
-.latest .art {
+.latest .cont {
   width: 85%;
   height: 30%;
   border-radius: 10px;
-  background-color: red;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont .art {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-part h3 {
+  font-size: 2em;
+}
+
+.f-part .art-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.f-part .art-info img {
+  display: block;
+  border-radius: 100%;
+}
+
+.desc img {
+  border-radius: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 14%;
+  margin: 0;
+  padding: 0 2% 0 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo {
+  width: fit-content;
+  margin-left: 20px;
+  margin-right: 20px;
 }
